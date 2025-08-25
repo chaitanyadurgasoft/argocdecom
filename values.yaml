@@ -1,26 +1,26 @@
 microservices:
-- replicas: 1
+- replicas: 2
   labels: 
     app: frontend
   name: frontend
   image: 
     repository: chaitanyamanikumar/microservicefrontend
-    tag: v1
-- replicas: 1
+    tag: v2
+- replicas: 2
   labels: 
     app: user
   name: user-service
   image: 
     repository: chaitanyamanikumar/microserviceuser
     tag: v1
-- replicas: 1
+- replicas: 2
   labels: 
     app: product
   name: product-service
   image: 
     repository: chaitanyamanikumar/microserviceproduct
     tag: v1
-- replicas: 1
+- replicas: 2
   labels: 
     app: order
   name: order-service
